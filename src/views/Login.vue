@@ -6,7 +6,7 @@
           <el-input v-model="form.username"></el-input>
         </el-form-item>
         <el-form-item label="密码" prop="password">
-          <el-input v-model="form.password"></el-input>
+          <el-input v-model="form.password" type="password"></el-input>
         </el-form-item>
          <el-form-item>
           <el-button type="primary" @click="submitForm('form')">登录</el-button>
@@ -23,8 +23,8 @@ import axios from "axios"
     data(){
       return {
         form: {
-          username: '',
-          password: ''
+          username: 'admin',
+          password: '123456'
         },
         rules: {
           username: [
